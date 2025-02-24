@@ -1,7 +1,7 @@
 function caesarChiper(str, key) {
     let arrayStr = str.split('')
-    const upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ '.split('')
-    const lowerCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ '.toLowerCase().split('')
+    const upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
+    const lowerCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.toLowerCase().split('')
 
     //shift the alphabet according to the key
     while(key > 26)
@@ -26,12 +26,15 @@ function caesarChiper(str, key) {
     for(let i = 0; i < arrayStr.length; i++) {
         index[i] = lowerCase.indexOf(arrayStr[i].toLowerCase())
 
-        if(arrayStr[i] === arrayStr[i].toLowerCase())
-            newStr[i] = newLowerCase[index[i]]
+        if(arrayStr[i] === arrayStr[i].toLowerCase()) {
+            if(index[i] === -1)
+                newStr[i] = arrayStr[i]
+            else
+                newStr[i] = newLowerCase[index[i]]
+        }
         else
             newStr[i] = newUpperCase[index[i]]
     }
-    console.log(arrayStr, newStr)
     return newStr.join('')
 }
 

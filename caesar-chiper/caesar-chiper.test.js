@@ -5,5 +5,5 @@ test('takes a string and a shift factor and returns it with each character “sh
 })
 
 test('takes a string and a shift factor and returns it with each character “shifted”', () => {
-    expect(caesarChiper('EmotionalDamage', 3)).toEqual('HprwlrqdoGdpdjh')
+    expect(caesarChiper('Hello, World!', 3)).toEqual('Khoor, Zruog!')
 })
