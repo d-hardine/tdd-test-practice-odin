@@ -1,0 +1,26 @@
+{
+  "name": "tdd-test-practice-odin",
+  "version": "1.0.0",
+  "description": "Test Driven Practice for Odin Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-hardine/tdd-test-practice-odin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d-hardine/tdd-test-practice-odin/issues"
+  },
+  "homepage": "https://github.com/d-hardine/tdd-test-practice-odin#readme",
+  "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  }
+}
