@@ -27,7 +27,7 @@ function caesarChiper(str, key) {
         index[i] = lowerCase.indexOf(arrayStr[i].toLowerCase())
 
         if(arrayStr[i] === arrayStr[i].toLowerCase()) {
-            if(index[i] === -1)
+            if(index[i] === -1) //punctuation is considered -1
                 newStr[i] = arrayStr[i]
             else
                 newStr[i] = newLowerCase[index[i]]
